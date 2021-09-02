@@ -11,7 +11,7 @@
 
 ## ToDo
 
-* Fix category title formatting
+* Fix category title
 
 ## More Info
 
