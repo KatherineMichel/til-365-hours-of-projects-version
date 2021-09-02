@@ -55,7 +55,7 @@ def main():
                 raw = read_files(os.path.join(root, cat, file))
                 parts = raw.split("/---/")
                 for part in parts:
-                    til = parse_til(part.strip(), cat)
+                    til = parse_til(part.strip(), cat.replace("-"," "))
                     til["file_name"] = file
                     cat_tils.append(til)
                     recent_tils.append(til)
