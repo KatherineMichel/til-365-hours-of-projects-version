@@ -61,7 +61,7 @@ def main():
                     recent_tils.append(til)
 
         cat_tils.sort(key=lambda a: a["date"])
-        cat_content += f"| **{cat.replace("-", " ").capitalize()}** [{len(cat_tils)} Tils] | |\n"
+        cat_content += f"| **{cat.capitalize()}** [{len(cat_tils)} Tils] | |\n"
         for til in cat_tils:
             count += 1
             cat_content += f"| {count}. [{til['title']}]({til['category']}/{til['file_name']}) | {til['date'].strftime('%Y-%m-%d')} |\n"
