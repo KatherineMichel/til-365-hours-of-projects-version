@@ -55,7 +55,7 @@ def main():
                 raw = read_files(os.path.join(root, cat, file))
                 parts = raw.split("/---/")
                 for part in parts:
-                    til = parse_til(part.strip(), cat.replace("-"," "))
+                    til = parse_til(part.strip(), cat)
                     til["file_name"] = file
                     cat_tils.append(til)
                     recent_tils.append(til)
@@ -93,6 +93,7 @@ def parse_til(content, category):
     pos3 = content.find("\n", pos2)
     pos4 = content.find("##", pos3)
     pos5 = content.find("\n", pos4)
+    category = category.replace("-"," ")
     post = {
         "category": category,
         "date": datetime.strptime(content[pos1 + 9 : pos2].strip(), "%Y-%m-%d"),
