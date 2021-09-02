@@ -1,10 +1,10 @@
 # The name of this workflow
 name: Update README.md
 
-# When a push is made to the master branch, run this workflow
+# When a push is made to the main branch, run this workflow
 on:
   push:
-    branches: [master]
+    branches: [main]
  
 # Create a development environment
 jobs:
