@@ -5,7 +5,7 @@
 
 | **By Category** | :books: |
 | -------- | -------- |
-| **Nursing-home-app** [1 Tils] | |
+| **nursing-home-app** [1 Tils] | |
 | 1. [Created Project and Set Up API](nursing-home-app/created-project-and-set-up-api.md) | 2021-09-02 |
 
 
