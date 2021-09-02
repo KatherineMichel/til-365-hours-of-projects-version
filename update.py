@@ -9,8 +9,16 @@ from datetime import datetime
 
 HEADER = """\
 # TIL- 365 Days of Projects Version
+"""
+
+FOOTER = """\
 
 See my [TIL- 100 Days of Code Version](https://github.com/KatherineMichel/portfolio/blob/master/regular-blog-posts/til-100-days-of-code-version.md) blog post for information.
+
+## ToDo
+
+* Fix category title formatting
+
 """
 
 
@@ -66,6 +74,8 @@ def main():
 
     content += recent_content
     content += cat_content
+
+    content += FOOTER
 
     with open("README.md", "w") as fd:
         fd.write(content)
