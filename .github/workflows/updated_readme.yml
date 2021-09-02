@@ -1,5 +1,5 @@
 # The name of this workflow
-name: Update README.md and Tweet
+name: Update README.md
 
 # When a push is made to the master branch, run this workflow
 on:
@@ -32,14 +32,7 @@ jobs:
       # Install pip and use pip to install third-party dependencies required to run the program
       run: |
         python -m pip install --upgrade pip
-        pip install twython      
-    - name: Run python script to update README.md and tweet a status update
-      env:	
-        # Make the encrypted secrets stored in the repo settings available to the program
-        APP_KEY: ${{ secrets.APP_KEY }}	
-        APP_SECRET: ${{ secrets.APP_SECRET }}	
-        OAUTH_TOKEN: ${{ secrets.OAUTH_TOKEN }}	
-        OAUTH_TOKEN_SECRET: ${{ secrets.OAUTH_TOKEN_SECRET }}
+    - name: Run python script to update README.md
       # Run the program        
       run: python update.py
     - name: Commit new README.md
