@@ -81,8 +81,6 @@ def main():
     with open("README.md", "w") as fd:
         fd.write(content)
 
-    status = recent_tils[0]["status"]
-
 
 def read_files(file_path):
     with open(file_path, "r") as fd:
@@ -92,16 +90,14 @@ def read_files(file_path):
 def parse_til(content, category):
     pos1 = content.find("- Date : ")
     pos2 = content.find("- Tags : ", pos1)
-    pos3 = content.find("- Status : ", pos2)
-    pos4 = content.find("\n", pos3)
-    pos5 = content.find("##", pos4)
-    pos6 = content.find("\n", pos5)
+    pos3 = content.find("\n", pos2)
+    pos4 = content.find("##", pos3)
+    pos5 = content.find("\n", pos4)
     post = {
         "category": category,
         "date": datetime.strptime(content[pos1 + 9 : pos2].strip(), "%Y-%m-%d"),
         "tags": [t[1:] for t in content[pos2 + 9 : pos3].strip().split(" ")],
-        "status": content[pos3 + 11 : pos4].strip(),
-        "title": content[pos5 + 3 : pos6].strip(),
+        "title": content[pos4 + 3 : pos5].strip(),
     }
 
     return post
