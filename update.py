@@ -6,21 +6,11 @@ https://github.com/KatherineMichel/til-100-days-of-code-version/blob/master/prog
 import os
 from datetime import datetime
 
-from twython import Twython
-
-twitter = Twython(
-    os.environ.get("APP_KEY"),
-    os.environ.get("APP_SECRET"),
-    os.environ.get("OAUTH_TOKEN"),
-    os.environ.get("OAUTH_TOKEN_SECRET"),
-)
 
 HEADER = """\
-# TIL- 100 Days of Code Version
+# TIL- 365 Days of Projects Version
 
 See my [TIL- 100 Days of Code Version](https://github.com/KatherineMichel/portfolio/blob/master/regular-blog-posts/til-100-days-of-code-version.md) blog post for information.
-
-Before I created this app, I had already completed a considerable amount of 100 Days of Code. Although I may resume at some point and finish the 100 days within the TIL itself, it will be in excess of the 100 days.
 """
 
 FOOTER = """\
@@ -92,10 +82,6 @@ def main():
         fd.write(content)
 
     status = recent_tils[0]["status"]
-
-    tweet = status + " (auto-tweeted by my TIL bot)"
-    print(tweet)
-    # twitter.update_status(status=tweet)
 
 
 def read_files(file_path):
