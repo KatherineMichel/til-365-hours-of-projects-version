@@ -9,9 +9,10 @@
 | 1. [Created Project and Set Up API](nursing-home-app/created-project-and-set-up-api.md) | 2021-09-02 |
 
 
-See my [TIL- 100 Days of Code Version](https://github.com/KatherineMichel/portfolio/blob/master/regular-blog-posts/til-100-days-of-code-version.md) blog post for information.
-
 ## ToDo
 
 * Fix category title formatting
 
+## More Info
+
+See my [TIL- 100 Days of Code Version](https://github.com/KatherineMichel/portfolio/blob/master/regular-blog-posts/til-100-days-of-code-version.md) blog post for information.
