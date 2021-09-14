@@ -1,4 +1,4 @@
-# TIL- 365 Hours of Projects Version
+# TIL- 365 Days of Projects Version
 | **5 Most Recent TILs** | :tada: |
 | -------- | -------- |
 | [Added Heroku Configs and Auto-Deploy via GitHub Action](art-gallery-website/added-heroku-configs-and-auto-deploy-via-github-action.md) [art-gallery-website] | 2021-09-13 |
