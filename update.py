@@ -8,7 +8,7 @@ from datetime import datetime
 
 
 HEADER = """\
-# TIL- 365 Days of Projects Version
+# TIL- 365 Hours of Projects Version
 """
 
 FOOTER = """\
