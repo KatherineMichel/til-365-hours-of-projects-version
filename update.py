@@ -9,6 +9,8 @@ from datetime import datetime
 
 HEADER = """\
 # TIL- 365 Hours of Projects Version
+
+This is on hiatus due to my new job!
 """
 
 FOOTER = """\
