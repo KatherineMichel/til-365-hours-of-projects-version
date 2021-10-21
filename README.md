@@ -1,4 +1,6 @@
 # TIL- 365 Hours of Projects Version
+
+This is on hiatus due to my new job!
 | **5 Most Recent TILs** | :tada: |
 | -------- | -------- |
 | [Added Heroku Configs and Auto-Deploy via GitHub Action](art-gallery-website/added-heroku-configs-and-auto-deploy-via-github-action.md) [art-gallery-website] | 2021-09-13 |
